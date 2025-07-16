@@ -358,13 +358,57 @@
 
 @media (max-width: 600px) {
   .olive-hero-title {
-    font-size: 2.5rem;
+    font-size: 2rem;
+    line-height: 1.1;
   }
   .olive-hero-section {
-    padding: 0 0 1rem 0;
+    flex-direction: column;
+    padding: 0 0 0.5rem 0;
+    min-height: unset;
   }
   .olive-hero-left, .olive-hero-right {
-    padding: 1rem 0.5rem;
+    padding: 0.5rem 0.25rem;
+  }
+  .olive-hero-img {
+    max-width: 100vw;
+    border-radius: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-page {
+    padding: 0;
+  }
+  .hero-title {
+    font-size: 1.5rem;
+  }
+  .hero-subtitle {
+    font-size: 0.95rem;
+  }
+  .search-filter-section {
+    padding: 0.5rem;
+    gap: 0.5rem;
+  }
+  .posts-grid {
+    gap: 1rem;
+  }
+  .post-card {
+    padding: 0.5rem;
+    border-radius: 1rem;
+  }
+  .post-title {
+    font-size: 1.1rem;
+  }
+  .post-footer {
+    gap: 0.5rem;
+  }
+  .tag {
+    font-size: 0.7rem;
+    padding: 0.15rem 0.3rem;
+  }
+  .olive-hero-btn {
+    padding: 0.5rem 1.2rem;
+    font-size: 0.95rem;
   }
 }
 
@@ -400,23 +444,5 @@
   .post-footer {
     flex-direction: column;
     align-items: flex-start;
-  }
-}
-
-@media (max-width: 480px) {
-  .hero-title {
-    font-size: 2rem;
-  }
-
-  .hero-subtitle {
-    font-size: 1rem;
-  }
-
-  .post-card {
-    padding: 1rem;
-  }
-
-  .post-title {
-    font-size: 1.3rem;
   }
 } 

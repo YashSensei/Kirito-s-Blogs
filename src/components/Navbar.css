@@ -168,9 +168,10 @@
 
 @media (max-width: 480px) {
   .navbar {
-    padding: 0.5rem 0.25rem;
-    margin: 0.1rem;
-    border-radius: 12px;
+    overflow: hidden;
+  }
+  .nav-container {
+    padding-right: 0.25rem;
   }
   .nav-logo h1 {
     font-size: 1.1rem;
@@ -190,5 +191,11 @@
   .hamburger, .hamburger::before, .hamburger::after {
     width: 28px;
     height: 4px;
+  }
+}
+
+@media (max-width: 400px) {
+  .hamburger, .hamburger::before, .hamburger::after {
+    width: 22px;
   }
 } 
